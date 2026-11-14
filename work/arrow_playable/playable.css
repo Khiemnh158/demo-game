@@ -1,0 +1,27 @@
+.mode-buttons{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.training-button{min-height:49px;padding:0 18px;background:#352644ee;border:1px solid #b184af;border-radius:4px;color:#f7dff0;font-weight:800;box-shadow:0 4px 0 #24182f}
+.training-button:hover,.hud-utility:hover{background:#493354;color:#fff6f2}
+.cover-controls{gap:12px}
+.hero-card .portrait{image-rendering:auto;max-height:92px}
+.hero-card .hero-price{font-size:clamp(8px,1vw,11px)}
+.bow-card canvas{height:105px;width:100%;object-fit:contain}
+.hud-actions{max-width:min(420px,66vw)}
+.hud-utility{min-height:34px;padding:5px 8px;border:1px solid #a4799b;border-radius:4px;background:#1a142aee;color:#f5e1f0;font:700 12px 'Segoe UI',sans-serif;white-space:nowrap}
+.hud-utility[aria-pressed=true]{border-color:#efbbd8;background:#4a2d54}
+.clock-display{color:#f2d3b4;font-variant-numeric:tabular-nums;letter-spacing:.03em}
+.attack-charge{margin-top:6px;color:#ead3e8;font-size:11px;font-weight:700;display:grid;gap:3px}
+.attack-charge b{height:3px;background:#53385d;display:block;overflow:hidden}
+.attack-charge i{height:100%;display:block;width:0;background:#f0a7ce}
+.zoom-panel{position:fixed;right:16px;top:195px;display:grid;gap:2px;border:1px solid #a47b9f;background:#1a142aee;color:#ead6e9;z-index:21;padding:6px;border-radius:4px;font-size:12px;font-weight:800;pointer-events:none}
+.zoom-panel canvas{width:256px;height:188px;image-rendering:pixelated}
+#hudLayer.training .arena-rank{display:none}
+#hudLayer.training .zoom-panel{top:16px}
+#hudLayer.training #dragonStatusBadge{display:none}
+.playable-pause{position:fixed;inset:0;z-index:38;background:#160f23c9;display:grid;place-items:center;padding:16px}
+.playable-pause-card{width:min(100%,420px);padding:22px 23px;border:1px solid #976e9b;box-shadow:0 16px 38px #0e0819;background:#22182e;border-radius:7px;display:grid;gap:15px}
+.playable-pause-card h2{font-size:26px;font-weight:800;color:#fff0f5}
+.playable-pause-card div{display:grid;gap:8px}
+.playable-pause-card button{min-height:43px;padding:8px 12px}
+.playable-pause-card .resume{background:#e6b1d0;color:#21142a;border-color:#f6c7df}
+@media (max-width:760px){.hud-actions{max-width:calc(100vw - 44px)}.arena-rank{display:none}.zoom-panel{top:auto!important;bottom:111px;right:8px}.zoom-panel canvas{width:154px;height:113px}.hero-card .portrait{max-height:80px}.mode-buttons{gap:7px}.training-button{padding-inline:10px}}
+@media (max-width:375px){.mode-buttons{align-items:start;flex-direction:column}.zoom-panel{bottom:95px}}
